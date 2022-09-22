@@ -2,6 +2,9 @@
 
 #include "SerialPort.h"
 
+//test_220901
+//test_220922
+
 int main()
 {
 	CSerialPort _serial;
