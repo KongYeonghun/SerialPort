@@ -11,17 +11,6 @@
 
 using namespace std;
 
-typedef struct stSatelliteComm
-{
-    unsigned char   Message_ID;
-    unsigned char   Message_Length;
-    unsigned char   Device_ID;
-    float           Latitude;
-    float           Longitude;
-    float           UTC;
-    unsigned short  Battery_status;
-}SatelliteComm;
-
 class CSerialPort
 {
 public:

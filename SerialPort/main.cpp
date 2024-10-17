@@ -6,8 +6,6 @@
  
 int main(void)
 {
-	SatelliteComm	mSatelliteComm;
-
 	// memory buffer
 	BYTE* rxBuffer = new BYTE[SERIAL_PORT_BUFFER_SIZE];
 	BYTE txBuffer[SERIAL_PORT_BUFFER_SIZE];
@@ -31,10 +29,11 @@ int main(void)
 	else
 	{
 		::OutputDebugString( _T("Failed to read data\n") );
-		::OutputDebugString( _T("Failed to read data\n") );
 	}
 	
-	SerialPort.WriteByte( &txBuffer , SERIAL_PORT_BUFFER_SIZE);
+	while(1);
+
+	SerialPort.WriteByte( txBuffer , SERIAL_PORT_BUFFER_SIZE);
 
 	delete [] rxBuffer;
 	
