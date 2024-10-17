@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\yeong\source\repos\serialport\serialport\main.cpp(33): error C3861: 'WriteByte': 식별자를 찾을 수 없습니다.
+  SerialPort.cpp
